@@ -1,0 +1,810 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+nav {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(1196px, 100%); 
+    margin: auto; 
+    border-bottom: 1px solid #FFFFFF;
+    padding: 10px 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 57px;
+}
+
+.nav-links li > a {
+    color: #000;
+}
+
+.burger-menu {
+    display: none;
+}
+
+
+#acceuil, #impact,
+#section-temoin, 
+#section-apprentis,
+#section-soutien {
+    width: min(1196px, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+#container-acceuil,
+#temoignages,
+#apprentis, 
+#soutien {
+    background-color: #FFF;
+    box-shadow: 1px 1px 3px #D9DEE1;
+}
+
+.subtitle {
+    font-size: clamp(30px, 5vw, 38px);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.p-twenty-four {
+    font-size: clamp(18px, 5vw, 24px);
+} 
+
+button {
+    transition: all 0.4s ease;
+}
+
+a, button, .burger-menu,
+.slide-right, .slide-left, .tem-numbers > p, 
+.v-l, .v-r, .icon-stop,
+.arrow-right {
+    cursor: pointer;
+}
+
+
+#acceuil {
+    min-height: 514px;
+}
+
+#container-acceuil {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 514px;
+}
+
+.acceuil-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    padding-left: 50px;
+}
+
+h1 {
+    color: #CF3034;
+    font-size: clamp(24px, 5vw, 38px);
+    font-weight: 700;
+}
+
+.formations-btn,
+.question-btn, 
+.savoir-btn {
+    min-width: 193px;
+    min-height: 52px;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+    background-color: #CF3034;
+    color: #FFFFFF;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.question-btn {
+    background-color: #FFFFFF;
+    color: #CF3034;
+    border: 1.5px solid #CF3034;
+}
+
+.formations-btn:hover,
+ .savoir-btn:hover {
+    background-color: #FFFFFF;
+    color: #CF3034;
+    border: 1.5px solid #CF3034;
+}
+
+.question-btn:hover {
+    background-color: #CF3034;
+    color: #FFFFFF;
+}
+
+.photo-acceuil {
+    max-width: min(578px, 90%);
+}
+
+
+#notre-impact {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.first-two, .second-two {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first-two > div,
+.second-two > div {
+    background-color: white;
+    width: 197px;
+    height: 254px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 19px;
+}
+
+.second-two > div:nth-of-type(2){
+    background-color: #CF3034;
+    color: white;
+} 
+
+.card.h {
+    color: #CF3034;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 700;
+}
+
+.sorties, .bilan,
+.simploniens, .fabriques {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-arrow {
+    align-self: end;
+}
+
+.card-arrow.white {
+    filter: invert();
+}
+
+.card-text.three {
+    margin-bottom: -8px;
+}
+
+.card-text.four {
+    padding-top: 80px;
+}
+
+#temoignages {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials {
+    display: flex; 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+} 
+
+.testimonials::-webkit-scrollbar{
+    display: none;
+}
+
+.tem-row,
+.tem-row-imane,
+.tem-row-alcha {
+    display: flex;
+    min-width: fit-content;
+    scroll-snap-align: center;
+}
+
+.tem-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 70px 60px;
+    font-size: clamp(16px, 5vw, 18px);
+}
+
+.quotes {
+    font-size: 96px;
+    color: #CF3034;
+    display: block;
+    line-height: 1px; 
+}
+
+.tem-img {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 70px 60px 28px 60px;
+} 
+
+.sliding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+    width: 273px;
+}
+
+.tem-numbers {
+    display: flex;
+    gap: 11px;
+    font-size: 24px; 
+}
+
+.slide-right, .slide-left {
+    min-width: 11px;
+    height: 22px;
+}
+
+
+.apprentis {
+    min-height: 375px;
+    background-image: url(/images/img-apprentis-a.png);
+    display: flex;
+    justify-content: end;
+}
+
+.formations-CFA {
+    background-color: white;
+    width: 511px;
+    height: 323px;
+    padding: 40px 40px 33px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.aprendiz-two {
+    display: none;
+}
+
+.apprentis-bold {
+    font-weight: bold;
+}
+
+.savoir-btn {
+    width: 193px;
+}
+
+
+.soutiens {
+    min-height: 163px;
+
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.sponsors-list {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    height: 100%;
+    width: 10000%;
+    transition: all 750ms ease;
+    left: 0;
+}
+
+.premier-sponsor,
+.deuxieme-sponsor {
+    display: flex;
+    gap: 35px;
+
+    position: relative;
+    height: 100%;
+}
+
+.premier-sponsor {
+    min-width: 100%;
+    justify-content: center;
+}
+
+.deuxieme-sponsor {
+    min-width: 100%;
+    justify-content: center;
+}
+
+.arrow-parent {
+    display: flex;
+    justify-content: end;
+    min-width: 100%;
+    margin-bottom: 100px;
+}
+
+#arrow-section {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.arrows-play {
+    display: flex;
+    padding-top: 25px;
+}
+
+.v-l {
+    margin-right: 36px;
+}
+
+.v-r {
+    margin-left: 36px;
+}
+
+.arrow-right {
+    background-color: #CF3034;
+    width: 47px;
+    height: 47px;
+}
+
+.arrow {
+    filter: invert();
+}
+
+
+footer {
+    background-color: #CF3034;
+    color: white;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(381px, 1fr));
+    grid-template-rows: .5fr .5fr .5fr;
+
+    grid-template-areas: 
+    "logo input"
+    "socials socials"
+    "footnav footnav";
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 50px 72.5px 0 15px;
+    grid-area: logo;
+}
+
+.footer-restez-informe {
+    padding: 50px 15px 15px 72.5px;
+    grid-area: input;
+}
+
+.inscription-text > h4 {
+    font-size: clamp(24px, 5vw, 38px);
+}
+
+.inscription-text > p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 315px;
+    height: 32px;
+    border: 1px solid white;
+    background-color: #CF3034;
+    color: white;
+    padding: 7px 21px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.mail-send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-width: 32px;
+    height: 31.5px;
+    border: none;
+}
+
+.mail-send:hover {
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 30px;
+    grid-area: socials;
+}
+
+.socials > div {
+    background-color: #CF3034;
+    border: 1px solid white;
+    border-radius: 70px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-hover {
+    display: none;
+}
+
+.socials > div:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 1px solid #CF3034;
+}
+
+
+.socials > div:hover > .socials-hover {
+    display: block;
+}
+
+.socials > div:hover > .socials-icons {
+    display: none;
+}
+
+
+.footer-menu {
+    grid-area: footnav;
+}
+
+.ft-mn {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    list-style: none;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.ft-mn > li > a {
+    color: white;
+    border-right: 1px solid white;
+    padding-right: 28px;
+}
+
+.ft-mn > li:nth-last-child(1) > a {
+    border-right: none;
+}
+
+/* -------------MEDIA QUERIES----------------- */
+
+@media screen and (max-width: 1151px) {
+
+    .subtitle {
+        margin-left: 16px;
+    }
+
+    #container-acceuil {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .acceuil-text {
+        align-items: center;
+        text-align: center;
+        padding: 24px 10px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .photo-acceuil {
+        padding-bottom: 10px;
+    }
+}
+
+.mobile-menu {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 980px) {
+    nav {
+        position: fixed;
+        z-index: 1;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        flex-direction: column;
+        background-color: #E5E5E5;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: -300%;
+
+        transition: 0.7s;
+        z-index: 2;
+    }
+
+    .nav-links.mobile-menu {
+        margin-top: 0px;
+    }
+
+    .burger-menu {
+        display: flex;
+        justify-content: end;
+        z-index: 2;
+    }
+
+    .tem-row,
+    .tem-row-imane,
+    .tem-row-alcha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quotes {
+        padding-top: 21px;
+    }
+
+    .tem-text {
+        padding: 35px 16px;
+    }
+
+    .tem-img {
+        margin-right: 0px;
+        padding: 0px 0 18px 0;
+    }
+
+    .tem-img > img {
+        display: none;
+    }
+
+    .apprentis {
+        background-color: white;
+    }
+
+    .formations-CFA {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+    }  
+
+    figure > img {
+        width: auto;
+        height: 68px;
+    }
+
+    .simplon-inscription {
+        gap: 60px;
+    }
+
+    .arrow-parent {
+        background-color: white;
+    }
+
+    #arrow-section {
+        width: 60%;
+    }
+
+    .arrows-play {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 761px) {
+    .apprentis {
+        background-image: none;
+    }
+
+    .formations-CFA {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        padding: 16px;
+        gap: 20px;
+    } 
+
+    .aprendiz-two {
+        display: block;
+        width: 100%;
+        height: 100%;
+    } 
+
+    .premier-sponsor,
+    .deuxieme-sponsor {
+        gap: 16px;
+    }
+
+    footer {
+        background-color: #CF3034;
+        color: white;
+        width: 100vw;
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-rows: .3fr .3fr .3fr .3fr;
+    
+        grid-template-areas: 
+        "input"
+        "footnav"
+        "socials"
+        "logo";
+    }
+
+    .footer-logo {
+        justify-content: center;
+        padding: 44px 0 0 0px;
+    }
+    
+    .footer-restez-informe {
+        padding: 50px 15px 15px 15px;
+    }
+
+    .socials > div {
+        width: 35px;
+        height: 35px;
+    } 
+
+    .socials > div > img {
+        width: auto;
+        height: 18px;
+    }
+
+    .ft-mn {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }   
+   
+    .ft-mn > li > a {
+        border-right: none;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+
+    .subtitle {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    #container-acceuil {
+        margin-top: 68px;
+    }
+
+    .acceuil-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        text-align: left;
+        gap: 36px;
+        padding: 31px 16px;
+        width: 100%;
+    }
+
+    .logo-acc {
+        width: 300px;
+        height: auto;
+    }
+
+    button {
+        width: 100%; 
+    } 
+
+    form > button {
+        width: 0%; 
+    } 
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    .photo-acceuil {
+        display: none;
+    }
+
+    .first-two > div,
+    .second-two > div {
+        width: 167px;
+        height: auto;
+    } 
+    
+    .card.p {
+        font-size: 18px;
+        padding: 0px 11px;
+    }
+
+    .savoir-btn {
+        width: 100%;
+    }
+
+    .soutiens {
+        min-height: 95px;
+        gap: 15px;
+    }
+
+    .sponsor {
+        width: auto;
+        height: 48px;
+    } 
+
+    .arrow-parent {
+        margin-bottom: 50px;
+    }
+
+    #arrow-section {
+        width: 65%;
+    }
+}
